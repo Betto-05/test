@@ -27,7 +27,8 @@ class testControllers extends Controller
     {
         // Validate input
         $validated = $request->validate([
-            'name' => 'required|string|max:255',
+            'testName' => 'required|string|max:255',
+            'testType' => 'required|string|max:255',
         ]);
 
         // Create record
